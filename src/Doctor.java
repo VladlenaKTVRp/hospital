@@ -1,19 +1,22 @@
+public class Doctor extends Person implements Employee {
 
-import java.util.List;
-
-public class Doctor extends Person implements Departments {
-
-    private Department depatment;
-
-    private List<Pacient> pacients;
+    private Integer salary;
 
     @Override
-    public String getDepartment() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Integer getSalary() {
+        return this.salary;
     }
 
-    @Override
-    public Department setDerartment(Department department) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Doctor(Integer salary) {
+        this.salary = salary;
     }
+
+    public Doctor() {
+    }
+
+    public void setSalary(Integer salary) {
+        this.salary = salary;
+    }
+    
+    
 }
